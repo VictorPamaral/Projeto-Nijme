@@ -1,0 +1,725 @@
+/*Template name: Nijme 2024*/
+/* EDITADO POR VICTOR PIRES - TII07 - SENAC LAPA TITO | 2024 */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.pages {
+    background-color: #f5eab3;
+    padding: 60px 0;
+}
+
+.bx-wrapper img {
+    height: auto;
+}
+
+body {
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Eagle Lake', serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu {
+    background-color: #000;
+    height: 168px;
+}
+
+footer .menu {
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.menu-principal {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.links a {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 1s;
+    border-radius: 3px;
+    padding: 5px 5px;
+    margin-left: 5px;
+}
+
+.links a:hover {
+    background-color: #DAA520;
+}
+
+
+/*INTRODUCAO*/
+
+.intro {
+    background-image: url(imagens/nijme.jpg);
+    height: 1061px;
+    background-repeat: no-repeat;
+}
+
+.container_intro {
+    height: 405px;
+    width: 275px;
+    position: absolute;
+    margin-left: 560px;
+    margin-top: 340px;
+}
+
+.intro h1 {
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Eagle Lake', cursive;
+    text-align: center;
+    font-weight: normal;
+}
+
+.intro h2 {
+    color: #fff;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    line-height: 10px;
+}
+
+.botao_home {
+    background-image: url(imagens/botao_%20degrade_saiba_mais.png);
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 3px;
+    width: 180px;
+    height: 69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.botao:hover {
+    animation: pulse 1s infinite;
+}
+
+.colunas {
+    padding-top: 40px;
+    max-width: 860px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-principal {
+    position: relative;
+}
+
+.menu-principal ul {
+    position: absolute;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    padding-top: 10px;
+    display: none;
+    z-index: 100;
+    list-style: none;
+}
+
+.menu-principal ul a {
+    background-image: url(imagens/submenu-botao.png);
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    width: 150px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 0
+}
+
+.menu-principal ul a:hover {
+    background-color: transparent;
+}
+
+.menu-principal li:hover ul {
+    display: block;
+}
+
+footer .menu-principal ul {
+    bottom: 100%;
+    padding-bottom: 10px;
+}
+
+.botao {
+    background-color: #000;
+    color: #f5d883;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 192px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+footer .menu nav {
+    padding-top: 15px;
+    flex-wrap: wrap;
+}
+
+.copyright {
+    color: #737373;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+.menu nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.container {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*BELLY DANCE*/
+
+.nijme_bellydance {
+    background-image: url(imagens/nijme-belly-dance.jpg);
+    padding-top: 100px;
+    padding-bottom: 120px;
+    height: 1061px;
+    background-repeat: no-repeat;
+}
+
+.nijme_bellydance .titulo {
+    color: #fff;
+    font-size: 51px;
+    font-family: 'Eagle Lake', cursive;
+    font-weight: normal;
+    text-align: center;
+}
+
+.nijme_bellydance_titulo {
+    height: 405px;
+    width: 275px;
+    position: absolute;
+    margin-left: 1265px;
+    margin-top: 125px;
+}
+
+.nijme_bellydance .chamada {
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+}
+
+.chamada {
+    font-size: 16px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: normal;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+
+/*ATS*/
+
+.nijme_ats {
+    background-image: url(imagens/nijme-ats.jpg);
+    height: 1061px;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    color: #fff;
+    text-align: center;
+}
+
+.nijme_ats .titulo {
+    color: #fff;
+    font-size: 46px;
+    font-family: 'Eagle Lake', cursive;
+    font-weight: normal;
+}
+
+.nijme_ats_titulo {
+    height: 405px;
+    width: 330px;
+    position: absolute;
+    margin-left: 375px;
+    margin-top: 10px;
+}
+
+.nijme_ats .chamada {
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+}
+
+.chamada {
+    font-size: 16px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: normal;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+
+/*DANCA CIGANA*/
+
+.nijme_cigana {
+    background-image: url(imagens/nijme-danca-cigana.jpg);
+    height: 1061px;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    color: #fff;
+    text-align: center;
+}
+
+.nijme_cigana .titulo {
+    color: #fff;
+    font-size: 51px;
+    font-family: 'Eagle Lake', cursive;
+    font-weight: normal;
+}
+
+.nijme_cigana_titulo {
+    height: 405px;
+    width: 275px;
+    position: absolute;
+    margin-left: 1265px;
+    margin-top: 125px;
+}
+
+.nijme_cigana .chamada {
+    color: #fff;
+    line-height: 26px;
+    text-align: center;
+}
+
+.chamada {
+    font-size: 16px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: normal;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+
+/*TRIBAL FUSION*/
+
+.nijme_tribal {
+    background-image: url(imagens/nijme-tribal.jpg);
+    height: 1061px;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.nijme_tribal .titulo {
+    color: #fff;
+    font-size: 46px;
+    font-family: 'Eagle Lake', cursive;
+    font-weight: normal;
+    line-height: 72px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.nijme_tribal_titulo {
+    height: 405px;
+    width: 421px;
+    position: absolute;
+    margin-left: 375px;
+    margin-top: 190px;
+}
+
+.nijme_tribal .chamada {
+    color: #fff;
+    line-height: 26px;
+    text-align: center;
+}
+
+.chamada {
+    font-size: 16px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: normal;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.links {
+    width: 615px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.botoes_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.redes {
+    padding-top: 30px;
+    margin-left: auto;
+    height: 76px;
+}
+
+.redes a {
+    width: 32px;
+    height: 32px;
+    text-indent: -10000px;
+    display: inline-block;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+}
+
+.redes a:hover {
+    background-color: #A9A9A9;
+}
+
+.whatsapp {
+    background-image: url(imagens/whatsapp.png);
+}
+
+.facebook {
+    background-image: url(imagens/facebook.png);
+}
+
+.instagram {
+    background-image: url(imagens/instagram.png);
+}
+
+.youtube {
+    background-image: url(imagens/youtube.png);
+}
+
+.twitter {
+    background-image: url(imagens/twitter.png);
+}
+
+.email {
+    background-image: url(imagens/email.png);
+}
+
+.linkedin {
+    background-image: url(../../uploads/2020/12/LinkedIn.png);
+}
+
+
+/*CONTATO*/
+
+.text_map {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato {
+    background-color: #3c5499;
+    color: #fff;
+}
+
+.campo {
+    margin-bottom: 27px;
+    background-color: #DAA520;
+    border: 0;
+    border-radius: 3px;
+    width: 415px;
+    height: 56px;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    padding-left: 25px;
+    font-size: 18px;
+}
+
+textarea.campo {
+    width: 860px;
+    height: 200px;
+    padding: 25px;
+}
+
+.campo::placeholder {
+    color: #000;
+}
+
+.campo:focus {
+    outline: 0;
+    background-color: #B8860B;
+}
+
+.contato .container {
+    max-width: 860px;
+}
+
+.contato .botao {
+    background-color: #30bae7;
+    border-bottom-color: #299ec5;
+}
+
+.botao-mobile {
+    display: none;
+}
+
+.bx-wrapper {
+    border: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+
+/*SOBRE MIM*/
+
+.texto_sobre_mim p {
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.pages__titulo {
+    color: #000;
+    line-height: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Eagle Lake', cursive;
+    font-weight: normal;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.botao-mobile {
+    background: url(imagens/mobile.png) no-repeat;
+    width: 35px;
+    height: 25px;
+    border: 0;
+    text-indent: -10000px;
+    display: none;
+}
+
+.jogo-container {
+  background-color: red;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  position: relative; /* If you want text inside of it */
+margin-bottom: 30px;
+}
+
+/* If you want text inside of the container */
+.jogo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+width: 100%;
+height: 100%;
+border: 0;
+}
+
+/*RESPONSIVO TABLET (768px)*/
+
+@media (max-width: 1099px) {
+    .links {
+        width: auto;
+    }
+    .container {
+        width: 768px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .mapa {
+        margin-bottom: 30px;
+    }
+    .container_intro,
+    .nijme_bellydance_titulo,
+    .nijme_ats_titulo,
+    .nijme_cigana_titulo,
+    .nijme_tribal_titulo {
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: static;
+    }
+    .intro,
+    .nijme_bellydance,
+    .nijme_ats,
+    .nijme_cigana,
+    .nijme_tribal {
+        height: auto;
+        background-size: auto 480px;
+        padding-top: 510px;
+        position: relative;
+        background-position: center top;
+        background-color: #000000ee;
+        padding-bottom: 30px;
+    }
+    .intro .titulo,
+    .nijme_bellydance .titulo,
+    .nijme_ats .titulo,
+    .nijme_cigana .titulo,
+    .nijme_tribal .titulo {
+        line-height: 1.4;
+    }
+    .redes a {
+        margin: 0
+    }
+    .colunas {
+        gap: 30px;
+    }
+    .campo {
+        width: 100%;
+    }
+    textarea.campo {
+        width: 100%;
+    }
+}
+
+
+/*SMARTPHONE*/
+
+@media (max-width: 767px) {
+    .intro,
+    .nijme_bellydance,
+    .nijme_ats,
+    .nijme_cigana,
+    .nijme_tribal {
+        height: auto;
+        background-size: auto 230px;
+        padding-top: 260px;
+        position: relative;
+        background-position: center top;
+        background-color: #000000ee;
+        padding-bottom: 30px;
+    }
+    .botao-mobile {
+        display: block;
+    }
+    .container {
+        width: 320px;
+    }
+    .menu nav {
+        flex-direction: column;
+    }
+    .links a {
+        display: block;
+        margin-left: 0;
+        padding: 10px;
+    }
+    .links {
+        width: 100%;
+        text-align: center;
+        padding-top: 40px;
+        padding-right: 0;
+        height: auto;
+        display: none;
+    }
+    .botoes_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .redes {
+        margin-bottom: 0;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .menu {
+        height: auto;
+        padding-bottom: 20px
+    }
+    .menu-principal {
+        flex-direction: column;
+    }
+    .menu-principal ul {
+        position: static;
+        width: auto
+    }
+    .menu-principal ul a {
+        background: #111;
+        border-radius: 0;
+        width: auto;
+    }
+    .text_map {
+        flex-direction: column;
+    }
+    .mapa {
+        width: 100%;
+    }
+    .colunas {
+        gap: 0;
+        flex-direction: column;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}

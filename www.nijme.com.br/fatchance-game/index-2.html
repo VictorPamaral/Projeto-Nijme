@@ -1,0 +1,385 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Níjme</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Eagle+Lake|Libre+Baskerville:400i|Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link href="https://www.nijme.com.br/wp-content/themes/nijme2020/style.css" rel="stylesheet">
+    <script src="https://www.nijme.com.br/wp-content/themes/nijme2020/js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel='dns-prefetch' href='//s.w.org' />
+		<!-- This site uses the Google Analytics by ExactMetrics plugin v6.8.0 - Using Analytics tracking - https://www.exactmetrics.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=UA-138565816-1"  type="text/javascript" data-cfasync="false" async></script>
+			<script type="text/javascript" data-cfasync="false">
+				var em_version = '6.8.0';
+				var em_track_user = true;
+				var em_no_track_reason = '';
+				
+								var disableStr = 'ga-disable-UA-138565816-1';
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					return document.cookie.indexOf( disableStr + '=true' ) > - 1;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if ( __gtagTrackerIsOptedOut() ) {
+					window[disableStr] = true;
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+					window[disableStr] = true;
+				}
+
+				if ( 'undefined' === typeof gaOptout ) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+				if ( em_track_user ) {
+					function __gtagTracker() {dataLayer.push( arguments );}
+					__gtagTracker( 'js', new Date() );
+					__gtagTracker( 'set', {
+						'developer_id.dNDMyYj' : true,
+						                    });
+					__gtagTracker( 'config', 'UA-138565816-1', {
+						forceSSL:true,page_path:'/404.html?page=' + document.location.pathname + document.location.search + '&from=' + document.referrer,					} );
+										window.gtag = __gtagTracker;										(
+						function () {
+							/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+							/* ga and __gaTracker compatibility shim. */
+							var noopfn = function () {
+								return null;
+							};
+							var newtracker = function () {
+								return new Tracker();
+							};
+							var Tracker = function () {
+								return null;
+							};
+							var p = Tracker.prototype;
+							p.get = noopfn;
+							p.set = noopfn;
+							p.send = function (){
+								var args = Array.prototype.slice.call(arguments);
+								args.unshift( 'send' );
+								__gaTracker.apply(null, args);
+							};
+							var __gaTracker = function () {
+								var len = arguments.length;
+								if ( len === 0 ) {
+									return;
+								}
+								var f = arguments[len - 1];
+								if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+									if ( 'send' === arguments[0] ) {
+										var hitConverted, hitObject = false, action;
+										if ( 'event' === arguments[1] ) {
+											if ( 'undefined' !== typeof arguments[3] ) {
+												hitObject = {
+													'eventAction': arguments[3],
+													'eventCategory': arguments[2],
+													'eventLabel': arguments[4],
+													'value': arguments[5] ? arguments[5] : 1,
+												}
+											}
+										}
+										if ( 'pageview' === arguments[1] ) {
+											if ( 'undefined' !== typeof arguments[2] ) {
+												hitObject = {
+													'eventAction': 'page_view',
+													'page_path' : arguments[2],
+												}
+											}
+										}
+										if ( typeof arguments[2] === 'object' ) {
+											hitObject = arguments[2];
+										}
+										if ( typeof arguments[5] === 'object' ) {
+											Object.assign( hitObject, arguments[5] );
+										}
+										if ( 'undefined' !== typeof arguments[1].hitType ) {
+											hitObject = arguments[1];
+											if ( 'pageview' === hitObject.hitType ) {
+												hitObject.eventAction = 'page_view';
+											}
+										}
+										if ( hitObject ) {
+											action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+											hitConverted = mapArgs( hitObject );
+											__gtagTracker( 'event', action, hitConverted );
+										}
+									}
+									return;
+								}
+
+								function mapArgs( args ) {
+									var arg, hit = {};
+									var gaMap = {
+										'eventCategory': 'event_category',
+										'eventAction': 'event_action',
+										'eventLabel': 'event_label',
+										'eventValue': 'event_value',
+										'nonInteraction': 'non_interaction',
+										'timingCategory': 'event_category',
+										'timingVar': 'name',
+										'timingValue': 'value',
+										'timingLabel': 'event_label',
+										'page' : 'page_path',
+										'location' : 'page_location',
+										'title' : 'page_title',
+									};
+									for ( arg in args ) {
+										if ( args.hasOwnProperty(arg) && gaMap.hasOwnProperty(arg) ) {
+											hit[gaMap[arg]] = args[arg];
+										} else {
+											hit[arg] = args[arg];
+										}
+									}
+									return hit;
+								}
+
+								try {
+									f.hitCallback();
+								} catch ( ex ) {
+								}
+							};
+							__gaTracker.create = newtracker;
+							__gaTracker.getByName = newtracker;
+							__gaTracker.getAll = function () {
+								return [];
+							};
+							__gaTracker.remove = noopfn;
+							__gaTracker.loaded = true;
+							window['__gaTracker'] = __gaTracker;
+						}
+					)();
+									} else {
+										console.log( "" );
+					( function () {
+							function __gtagTracker() {
+								return null;
+							}
+							window['__gtagTracker'] = __gtagTracker;
+							window['gtag'] = __gtagTracker;
+					} )();
+									}
+			</script>
+				<!-- / Google Analytics by ExactMetrics -->
+				<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.nijme.com.br\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.24"}};
+			!function(t,a,e){var r,i,n,o=a.createElement("canvas"),l=o.getContext&&o.getContext("2d");function c(t){var e=a.createElement("script");e.src=t,e.defer=e.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(e)}for(n=Array("flag","emoji4"),e.supports={everything:!0,everythingExceptFlag:!0},i=0;i<n.length;i++)e.supports[n[i]]=function(t){var e,a=String.fromCharCode;if(!l||!l.fillText)return!1;switch(l.clearRect(0,0,o.width,o.height),l.textBaseline="top",l.font="600 32px Arial",t){case"flag":return(l.fillText(a(55356,56826,55356,56819),0,0),e=o.toDataURL(),l.clearRect(0,0,o.width,o.height),l.fillText(a(55356,56826,8203,55356,56819),0,0),e===o.toDataURL())?!1:(l.clearRect(0,0,o.width,o.height),l.fillText(a(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),e=o.toDataURL(),l.clearRect(0,0,o.width,o.height),l.fillText(a(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),e!==o.toDataURL());case"emoji4":return l.fillText(a(55358,56794,8205,9794,65039),0,0),e=o.toDataURL(),l.clearRect(0,0,o.width,o.height),l.fillText(a(55358,56794,8203,9794,65039),0,0),e!==o.toDataURL()}return!1}(n[i]),e.supports.everything=e.supports.everything&&e.supports[n[i]],"flag"!==n[i]&&(e.supports.everythingExceptFlag=e.supports.everythingExceptFlag&&e.supports[n[i]]);e.supports.everythingExceptFlag=e.supports.everythingExceptFlag&&!e.supports.flag,e.DOMReady=!1,e.readyCallback=function(){e.DOMReady=!0},e.supports.everything||(r=function(){e.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",r,!1),t.addEventListener("load",r,!1)):(t.attachEvent("onload",r),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&e.readyCallback()})),(r=e.source||{}).concatemoji?c(r.concatemoji):r.wpemoji&&r.twemoji&&(c(r.twemoji),c(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='https://www.nijme.com.br/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var exactmetrics_frontend = {"js_events_tracking":"true","download_extensions":"zip,mp3,mpeg,pdf,docx,pptx,xlsx,rar","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/www.nijme.com.br","hash_tracking":"false","ua":"UA-138565816-1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.nijme.com.br/wp-content/plugins/google-analytics-dashboard-for-wp/assets/js/frontend-gtag.min.js?ver=6.8.0'></script>
+<script type='text/javascript' src='https://www.nijme.com.br/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.nijme.com.br/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://www.nijme.com.br/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.nijme.com.br/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.nijme.com.br/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.8.24" />
+<link rel="icon" href="https://www.nijme.com.br/wp-content/uploads/2017/06/cropped-Nijme_ATS_2017_FCDB_selo-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="https://www.nijme.com.br/wp-content/uploads/2017/06/cropped-Nijme_ATS_2017_FCDB_selo-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.nijme.com.br/wp-content/uploads/2017/06/cropped-Nijme_ATS_2017_FCDB_selo-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://www.nijme.com.br/wp-content/uploads/2017/06/cropped-Nijme_ATS_2017_FCDB_selo-270x270.jpg" />
+</head>
+
+<body class="error404">
+
+    <header class="menu">
+        <nav class="container">
+            <a href="https://www.nijme.com.br">
+                <img src="https://www.nijme.com.br/wp-content/themes/nijme2020/imagens/logo_nijme.png">
+            </a>
+
+            <div class="botoes_menu">
+                <div class="redes">
+                    <a href="https://api.whatsapp.com/send?l=pt&phone=5511947256632" target="_blank" class="whatsapp">WhatsApp</a>
+                    <a href="https://www.facebook.com/nijme.bellydance" target="_blank" class="facebook">Facebook</a>
+                    <a href="https://www.instagram.com/nijmeestudiodedanca/" target="_blank" class="instagram">Instagram</a>
+                    <a href="https://www.youtube.com/user/bailarinanijme" target="_blank" class="youtube">YouTube</a>
+                    <a href="https://twitter.com/nijme" target="_blank" class="twitter">Twitter</a>
+                    <a href="https://br.linkedin.com/in/nijme-bellydance-3b8b4914b" target="_blank" class="linkedin">Linkedin</a>
+                    <a href="mailto:bailarinanijme@gmail.com" target="_blank" class="email">E-mail</a>
+                </div>
+                <button class="botao-mobile">Abrir menu</button>
+                <div class="links">
+                    <ul id="menu-principal-2020" class="menu-principal"><li id="menu-item-393" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-393"><a href="https://www.nijme.com.br/">Home</a></li>
+<li id="menu-item-399" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-399"><a href="https://www.nijme.com.br/sobre-mim/">Sobre</a></li>
+<li id="menu-item-447" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-447"><a href="https://www.nijme.com.br/fatchance-game/">FatChance Game</a></li>
+<li id="menu-item-400" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-400"><a href="#">Estúdio de dança</a>
+<ul  class="sub-menu">
+	<li id="menu-item-395" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-395"><a href="https://www.nijme.com.br/danca-do-ventre/">Dança do ventre</a></li>
+	<li id="menu-item-397" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-397"><a href="https://www.nijme.com.br/fatchance-style/">FCBD®Style – ATS®</a></li>
+	<li id="menu-item-398" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-398"><a href="https://www.nijme.com.br/fusion-belly-dance/">Fusion Belly Dance</a></li>
+	<li id="menu-item-394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394"><a href="https://www.nijme.com.br/danca-cigana-artistica/">Dança Cigana Artística</a></li>
+</ul>
+</li>
+<li id="menu-item-396" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-396"><a href="https://www.nijme.com.br/entre-em-contato-comigo/">Contato</a></li>
+</ul>                     <a href="../login.html"><img src="https://www.nijme.com.br/wp-content/themes/nijme2020/imagens/login.png"></a>                 </div>
+            </div>
+        </nav>
+    </header>        <!--INTRODUCAO-->
+        <section class="intro">
+            <div class="container_intro">
+                <h1>
+                    Níjme
+                </h1>
+                <h2>
+                    Tradição desde 1991
+                </h2>
+                <a href="sobre.html" class="botao_home">SAIBA MAIS</a>
+            </div>
+        </section>
+
+        <!--BELLY DANCE-->
+        <section class="nijme_bellydance">
+            <div class="container nijme_bellydance_titulo"> 
+                <h1 class="titulo">
+                    Dança<br>
+                    do<br>
+                    Ventre 
+                </h1>        
+                <p class="chamada">
+                    Belly Dance<br>
+                    Dança Oriental Árabe
+                </p>
+                <a href="danca_do_ventre.html" class="botao_home">SAIBA MAIS</a>
+
+            </div><!--fecha container-->
+        </section>
+
+        <!--ATS-->
+        <section class="nijme_ats">
+            <div class="container nijme_ats_titulo"> 
+                <h1 class="titulo">
+                    American<br> 
+                    Tribal Style®<br>
+                    Belly Dance
+                </h1>        
+                <p class="chamada">
+                    Estilo Tribal Americano<br>
+                    de Dança do Ventre</p>
+                <a href="ats.html" class="botao_home">SAIBA MAIS</a>
+
+            </div><!--fecha container-->
+        </section>
+
+        <!--DANCA CIGANA-->
+        <section class="nijme_cigana">
+            <div class="container nijme_cigana_titulo"> 
+                <h1 class="titulo">
+                    Dança<br> 
+                    Cigana<br>
+                    Artística
+                </h1>        
+                <p class="chamada">
+                    Arte dos ciganos do mundo</p>
+
+                <a href="danca_cigana.html" class="botao_home">SAIBA MAIS</a>
+
+            </div><!--fecha container-->
+        </section>       
+
+        <!--TRIBAL FUSION-->
+        <section class="nijme_tribal">
+            <div class="container nijme_tribal_titulo"> 
+                <h1 class="titulo">
+                    Tribal Fusion<br> 
+                    Belly Dance<br>
+                </h1>        
+                <p class="chamada">
+                    Estilo de Dança do Ventre contemporânea que mescla as<br> 
+                    danças do oriente médio com as danças do ocidente</p>
+
+                <a href="tribal.html" class="botao_home">SAIBA MAIS</a>
+
+            </div><!--fecha container-->
+        </section>       
+
+<script>
+    $('.botao-mobile').click(function() {
+        $('.links').slideToggle();
+    });
+    $('.jocel input').focus(function() {
+        $(this).next().fadeOut();
+    })
+
+    $('.jocel input').blur(function() {
+        if (!$(this).val()) {
+            $(this).next().fadeIn();
+        }
+    })
+</script>
+<footer>
+    <div class="menu">
+        <nav class="container">
+            <a href="index.html">
+                <img src="https://www.nijme.com.br/wp-content/themes/nijme2020/imagens/logo_nijme.png">
+            </a>
+            <div class="botoes_menu">
+                <div class="redes">
+                    <a href="https://api.whatsapp.com/send?l=pt&phone=5511947256632" target="_blank" class="whatsapp">WhatsApp</a>
+                    <a href="https://www.facebook.com/nijme.bellydance" target="_blank" class="facebook">Facebook</a>
+                    <a href="https://www.instagram.com/nijmeestudiodedanca/" target="_blank" class="instagram">Instagram</a>
+                    <a href="https://www.youtube.com/user/bailarinanijme" target="_blank" class="youtube">YouTube</a>
+                    <a href="https://twitter.com/nijme" target="_blank" class="twitter">Twitter</a>
+                    <a href="https://br.linkedin.com/in/nijme-bellydance-3b8b4914b" target="_blank" class="linkedin">Linkedin</a>
+                    <a href="mailto:bailarinanijme@gmail.com" target="_blank" class="email">E-mail</a>
+                </div>
+                <div class="links">
+                <ul id="menu-principal-2021" class="menu-principal"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-393"><a href="https://www.nijme.com.br/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-399"><a href="https://www.nijme.com.br/sobre-mim/">Sobre</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-447"><a href="https://www.nijme.com.br/fatchance-game/">FatChance Game</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-400"><a href="#">Estúdio de dança</a>
+<ul  class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-395"><a href="https://www.nijme.com.br/danca-do-ventre/">Dança do ventre</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-397"><a href="https://www.nijme.com.br/fatchance-style/">FCBD®Style – ATS®</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-398"><a href="https://www.nijme.com.br/fusion-belly-dance/">Fusion Belly Dance</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394"><a href="https://www.nijme.com.br/danca-cigana-artistica/">Dança Cigana Artística</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-396"><a href="https://www.nijme.com.br/entre-em-contato-comigo/">Contato</a></li>
+</ul>                </div>
+            </div>
+		<p class="copyright">
+			<img src="http://www.nijme.com.br/wp-content/uploads/2020/12/Copyright.png">
+		</p>
+        </nav>
+    </div>
+</footer>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/www.nijme.com.br\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.nijme.com.br/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0'></script>
+<script type='text/javascript' src='https://www.nijme.com.br/wp-includes/js/wp-embed.min.js?ver=4.8.24'></script>
+</body>
+
+</html>        

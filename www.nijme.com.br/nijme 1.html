@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nijme</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Eagle+Lake|Libre+Baskerville:400i|Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/estilo.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="menu">
+      <nav class="container">
+        <a href="#">
+          <img src="imagens/logo_nijme.png" />
+        </a>
+
+        <div class="botoes_menu">
+          <div class="redes">
+            <a href="#" target="_blank" class="whatsapp">WhatsApp</a>
+            <a href="#" target="_blank" class="facebook">Facebook</a>
+            <a href="#" target="_blank" class="instagram">Instagram</a>
+            <a href="#" target="_blank" class="youtube">YouTube</a>
+            <a href="#" target="_blank" class="twitter">Twitter</a>
+            <a href="#" target="_blank" class="email">E-mail</a>
+          </div>
+          <button class="botao-mobile"><img src="imagens/mobile.png" /></button>
+          <div class="links">
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Shows</a>
+            <div class="dropdown">
+              <a href="#">Estúdio de Dança</a>
+              <div class="submenu">
+                <a href="#">DANÇA DO VENTRE</a>
+                <a href="#">AMERICAN TRIBAL STYLE®</a>
+                <a href="#">TRIBAL FUSION BELLY DANCE</a>
+                <a href="#">DANÇA CIGANA ARTÍSTICA</a>
+              </div>
+            </div>
+            <a href="#">Contato</a>
+            <a href="#"><img src="imagens/login.png" /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="corpo">
+      <div class="rec">
+        <h1>Resetar sua senha agora:</h1>
+        <hr>
+        <form id="form" method="post" action="senha.alterada.html">
+          <div>
+            <label>CPF:</label><br>
+            <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required=""><br><br>
+            <label>Email:</label><br>
+            <input type="email" name="email" placeholder="Digite o seu email." required=""><br><br>
+            <label>Senha nova:</label><br>
+            <input type="senha nova" name="senha nova" placeholder="Digite sua nova senha:" required=""><br><br>
+            <label>Confirme sua nova senha:</label><br>
+            <input type="Confirme senha nova" name="Confirme senha nova" placeholder="Digite novamente sua nova senha:" required="">
+            <br><br>
+            <input type="submit" name="envio-form" value="Salvar" class="input">
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="menu">
+        <nav class="container">
+          <a href="#">
+            <img src="imagens/logo_nijme.png" />
+          </a>
+          <button class="botao-mobile"><img src="imagens/mobile.png" /></button>
+          <div class="botoes_menu">
+            <div class="redes">
+              <a href="#" target="_blank" class="whatsapp">WhatsApp</a>
+              <a href="#" target="_blank" class="facebook">Facebook</a>
+              <a href="#" target="_blank" class="instagram">Instagram</a>
+              <a href="#" target="_blank" class="youtube">YouTube</a>
+              <a href="#" target="_blank" class="twitter">Twitter</a>
+              <a href="#" target="_blank" class="email">E-mail</a>
+            </div>
+            <div class="links">
+              <a href="#">Home</a>
+              <a href="#">Sobre</a>
+              <a href="#">Shows</a>
+              <div class="dropdown">
+                <a href="#">Estúdio de Dança</a>
+                <div class="submenu">
+                  <a href="#">DANÇA DO VENTRE</a>
+                  <a href="#">AMERICAN TRIBAL STYLE®</a>
+                  <a href="#">TRIBAL FUSION BELLY DANCE</a>
+                  <a href="#">DANÇA CIGANA ARTÍSTICA</a>
+                </div>
+              </div>
+              <a href="#">Contato</a>
+              <a href="#"><img src="imagens/login.png" /></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

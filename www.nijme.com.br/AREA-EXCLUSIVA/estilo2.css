@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.pages {
+  background-color: #f5eab3;
+  padding: 60px 0;
+}
+
+body {
+  font-family: "Libre Baskerville", serif;
+  font-family: "Eagle Lake", serif;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.menu {
+  background-color: #000;
+  height: 168px;
+}
+
+.links a {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 1s;
+  border-radius: 3px;
+  padding: 5px 5px;
+  margin-left: 5px;
+}
+
+.links a:hover {
+  background-color: #daa520;
+}
+.corpo {
+  width: 100%;
+  height: 350px;
+  background-color: #f5eab3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.corpo .rec {
+  width: 450px;
+  height: 320px;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+}
+.corpo .rec p {
+  color: #ffffff;
+  font-size: 15px;
+  padding-left: 15px;
+  margin-top: 101px;
+}
+.input{
+  border: 2px solid gold; 
+  background-color: black; 
+  color: white; 
+  padding: 10px; 
+  width: 250px;
+  margin-top: 86px;
+  height: 50px; 
+  border-radius: 10px; 
+  outline: none; 
+}
+.input::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../imagens/botao_\ degrade_saiba_mais.png'); 
+  background-size: cover;
+  background-position: center;
+  z-index: -1; 
+  filter: brightness(0.5); 
+}
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.submenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  display: none;
+  z-index: 100;
+}
+.submenu a {
+  background-image: url(../imagens/submenu-botao.png);
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  width: 150px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 0;
+}
+.submenu a:hover {
+  background-color: transparent;
+}
+.dropdown:hover .submenu {
+  display: block;
+}
+footer .submenu {
+  bottom: 100%;
+  padding-bottom: 10px;
+}
+
+.botao {
+  background-color: #000;
+  color: #f5d883;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 192px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+footer .menu nav {
+  padding-top: 15px;
+}
+.menu nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+.container {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.links {
+  width: 615px;
+  height: 20px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.botoes_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.redes {
+  padding-top: 30px;
+  margin-left: auto;
+  width: 275px;
+  height: 76px;
+}
+
+.redes a {
+  width: 32px;
+  height: 32px;
+  text-indent: -10000px;
+  display: inline-block;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  transition: background-color 0.3s;
+}
+
+.redes a:hover {
+  background-color: #a9a9a9;
+}
+.whatsapp {
+  background-image: url(../imagens/whatsapp.png);
+}
+.facebook {
+  background-image: url(../imagens/facebook.png);
+}
+.instagram {
+  background-image: url(../imagens/instagram.png);
+}
+.youtube {
+  background-image: url(../imagens/youtube.png);
+}
+.twitter {
+  background-image: url(../imagens/twitter.png);
+}
+
+.email {
+  background-image: url(../imagens/email.png);
+}
+
+.botao-mobile {
+  display: none;
+}
+
+/*RESPONSIVO TABLET (768px)*/
+@media (max-width: 1099px) {
+  .links {
+    width: auto;
+  }
+  .container {
+    width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .intro {
+    height: 611px;
+    background-position: -221px center;
+    background-size: cover;
+  }
+  .container_intro {
+    margin-left: 46px;
+    margin-top: 130px;
+  }
+  .corpo {
+    width: 100%;
+    height: 350px;
+    background-color: #f5eab3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .corpo .rec {
+      width: 450px;
+      height: 320px;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+  }
+  .corpo .rec p {
+      color: #ffffff;
+  font-size: 15px;
+  padding-left: 15px;
+  margin-top: 101px;
+  }
+  .corpo .rec .envio-form{
+    margin-top: 75px;
+
+  }
+
+  /*SMARTPHONE*/
+  @media (max-width: 767px) {
+    .botao-mobile {
+      display: block;
+      background: transparent;
+    }
+    .container {
+      width: 320px;
+    }
+    .menu nav {
+      flex-direction: column;
+    }
+    .links a {
+      display: block;
+      margin-left: 0;
+      padding: 10px;
+    }
+    .links {
+      width: 100%;
+      text-align: center;
+      padding-top: 40px;
+      padding-right: 0;
+      height: auto;
+      display: none;
+    }
+    .botoes_menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .redes {
+      margin-bottom: 0;
+      height: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .menu {
+      height: auto;
+      padding-bottom: 20px;
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+}
